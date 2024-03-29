@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Text Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAAB7CAMAAADKQQWcAAAAA1BMVEUFBKrz3nDDAAAAMUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAvwFptAABjCxdswAAAABJRU5ErkJggg==');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .center-content {
+            text-align: center;
+        }
+        .image-upload-container {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            margin-right: 10px;
+            width: 100px;
+            height: 50px;
+        }
+        input[type="file"] {
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Text Extractor</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <div class="center-content">
+            <div class="image-upload-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSumPpkXs9kfiPVxHFIq3QRlo14NxNrWGE0Q&usqp=CAU" alt="Upload Image">
+                <input type="file" name="file">
+            </div>
+            <br>
+            <input type="submit" value="Upload and Extract Text">
+        </div>
+    </form>
+</body>
+</html>

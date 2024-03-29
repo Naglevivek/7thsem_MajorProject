@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHwA3AMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAGhABAQEBAAMAAAAAAAAAAAAAAAERcSExUf/EABkBAAMBAQEAAAAAAAAAAAAAAAACBAEDBf/EABkRAQEBAQEBAAAAAAAAAAAAAAABAhEDE//aAAwDAQACEQMRAD8AyiKD3ygAAA2RgA7ZyW0RRRnJeovhB1mGdLwA/wAy9JxdnxBnzHQFc7g3QBx1g0oA46y2UAcjADGiWKlZQoDQABlAHXEZQBTjJKICnGCWgCnOCWgajpPNnVEVl8x0ActYN1RBNrJ5VATbyeUAT6h4AObRKqVlCgNAA2MoAoxC0SgrxCUAV4y5VAFeMEAR3mAoisuAKgm3hsUBJvLpFEipNw8AEu46QAcaaCVUpaFAaAA2WUAU4JUoCvDnRKqVd5udARbiFARRmBRFZqBQEu4FCCL0h4KiotusAEmzwAT08EqpS0KA0ABssoApwSoFFeK50SqlXedJRFFmKREUUTQAVmtAAS7oUBFuukFRUW66QASbPABwp4JVSloUBoAGxlAHfFLRFRVikoArxpzqCorxslgA7TbABl2BQT72aQAS70eEUEm66QAS7p4AOJoJVSsoUBoAAAB0zWUAUY0SoKlU52TgA752XgijrPQvABl9BwBXLWzcQUT60eQATa0aQAT6p4AFaJVSsoUSKOgAHQANlAA7Z0UBK7Z2XipiprrNl4ULTTfRnACC+g4ogS7NxRIrjrbZABxujADl0wAOgSq5vsUP/9k=');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff; /* Text color */
+            background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #fff; /* Text color */
+            background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        pre {
+            font-size: 24px;
+            color: #fff; /* Text color */
+            background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+
+    <p>Extracted text:</p>
+    <pre>{{ extracted_text }}</pre>
+
+    <p>Match score:</p>
+    <pre>{{ score }}%</pre>
+</body>
+</html>
