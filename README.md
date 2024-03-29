@@ -1,0 +1,1 @@
+This is my academic project, built for the purpose of automating the task of checking subjective answer copy.In this project, we have used Python libraries for extracting text from images and then applied machine learning algorithms to check the similarity between two texts.Our system is capable of handling handwritten text as well.
